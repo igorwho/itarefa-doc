@@ -1,0 +1,74 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+}
+
+.col-left {
+    background-color: #2E3336;
+}
+.img-logo {
+    width: 4rem;
+}
+.name-app {
+    color: white;
+    margin-top: .7rem;
+}
+.desc-app {
+    color: white;
+}
+.row {
+    height: 100vh;
+    overflow: auto;
+}
+.col.col-center {
+    border-right: 2px solid #2E3336;
+    float: right;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    background-color: #e9ecef;
+}
+.search-input {
+    background-color: #2E3336;
+    border: none;
+    border-bottom: 2px solid #666;;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    width: 80%;
+    margin-left: -1rem;
+}
+.menu-left {
+    position: fixed;
+}
+.has-search {
+    margin-top: 1rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.2rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    margin-left: -.1rem;
+  }
+
+.list-group {
+    margin-top: .5rem;
+}
+.list-group-item, .list-group.list-group-flush {
+    background-color: #2E3336;
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    padding: .5rem;
+}
+.not-found {
+    color: white;
+}
