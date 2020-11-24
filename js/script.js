@@ -46,3 +46,17 @@ function prepare_menu (obj) {
     }
     document.getElementsByClassName('list-group')[0].innerHTML = out;
 }
+
+
+if (location.href.indexOf("#") > 0) {
+    var anchor = "";
+    anchor = decodeURI(location.href.split("#")[1]).replace(/[^\w\s]/gi, '');
+    var all = document.getElementsByClassName("list-group-item");
+    for (i = 0; i < all.length; i++) {
+        if (all[i].innerText.replace(/[^\w\s]/gi, '') == anchor) {
+            all[i].classList.add('active');
+            all[i].onclick();
+            break;
+        }
+    }
+}

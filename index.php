@@ -33,17 +33,16 @@
                   <input type="search" class="search-input" placeholder="Pesquisar" onkeyup="search(event)" />
                   <nav>
                     <ul class="list-group">
-
                       <?php
                         $topicos = get_topics();
                         if ($topicos) {
                           foreach($topicos as $topico) {
-                            echo "<a href='#$topico[0]' 
-                                    data-file='$topico[1]'
-                                    onclick='open_topic(\"source/$topico[1]\", event)' 
-                                    class='list-group-item list-group-item-action'>
-                                    $topico[0]
-                                  </a>";
+                            echo "\n\t\t\t\t\t\t<a href='#$topico[0]'"
+                                    . " data-file='$topico[1]'"
+                                    . " onclick='open_topic(\"source/$topico[1]\", event)'"
+                                    . " class='list-group-item list-group-item-action'>"
+                                    . $topico[0]
+                                  . "</a>";
                           }
                         } else {
                           echo "<span class='not-found'>$ICON_WARNING Nenhum tópico encontrado</span>";
@@ -56,7 +55,6 @@
               </div>
             </div>
             <div class="col col-center w-75">
-              <div id="aqui"></div>
 
                 <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
                 <script src="js/webcomponents-loader.min.js"></script>
